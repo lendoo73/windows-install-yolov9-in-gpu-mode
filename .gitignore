@@ -1,0 +1,27 @@
+# Python environments and generated cache files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.idea/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+/secrets.md
+
+# Keep only the selected trained checkpoint from generated run outputs
+runs/*
+!runs/train/
+runs/train/*
+!runs/train/yolov9-c-face-mask/
+runs/train/yolov9-c-face-mask/*
+!runs/train/yolov9-c-face-mask/weights/
+runs/train/yolov9-c-face-mask/weights/*
+!runs/train/yolov9-c-face-mask/weights/best.pt
+
+# Official YOLOv9 release weights are available from the upstream project
+/yolov9-c.pt
+/yolov9-c-converted.pt
+/yolov9-c-face-mask-converted.pt

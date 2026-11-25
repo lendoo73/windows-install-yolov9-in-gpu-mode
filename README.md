@@ -1,4 +1,32 @@
-# YOLOv9
+# YOLOv9 GPU Mode - YOLO Masterclass
+
+Windows GPU setup and YOLOv9 examples for inference, training, evaluation, tracking, vehicle counting, and speed estimation. This project extends the upstream [WongKinYiu/yolov9](https://github.com/WongKinYiu/yolov9) repository with course notes and a face-mask detection dataset.
+
+## Course notes
+
+- [Install YOLOv9 in GPU mode](21-110_Install_YOLOv9_in_GPU_Mode.md)
+- [Prepare and split a training dataset](21-115_Training_-_Preparing_Dataset_and_Splitting_the_Dataset_Automatically.md)
+- [Train and inspect accuracy with TensorBoard](21-117_Training_-_Perform_Training_and_See_the_Accuracy_Graph-using_Tensorboard.md)
+- [Face-mask detection case study](21-119_Study_Case_-_Face_Mask_Detection.md)
+- [Measure mean average precision](21-120_Accuracy_Measurement_using_Mean_Average_Precision.md)
+- [Vehicle tracking with Deep SORT](21-121_Vehicle_Counter_Project_-_YOLOv9_Deep_SORT_Object_Tracking.md)
+- [Vehicle counting](21-122_Vehicle_Counter_Project_-_Vehicle_Counter.md)
+- [Speed estimation](21-123_Vehicle_Counter_Project_-_Speed_Estimation.md)
+- [Streamlit dashboard](21-124_Vehicle_Counter_Project_-_Web_App_Dashboard_using_Streamlit.md)
+
+## Setup
+
+Use Python 3.9 and a compatible NVIDIA driver. Install the pinned dependencies with:
+
+```shell
+python -m pip install -r requirements.txt
+```
+
+The face-mask dataset is in `data/face_mask_dataset/`. The trained `best.pt` checkpoint is stored with Git LFS; run `git lfs install` and `git lfs pull` after cloning if it was not downloaded automatically. Other generated run outputs and official upstream release weights are not included.
+
+## Upstream YOLOv9
+
+The implementation and original documentation below are from [WongKinYiu/yolov9](https://github.com/WongKinYiu/yolov9). See [LICENSE.md](LICENSE.md) for the applicable software license.
 
 Implementation of paper - [YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information](https://arxiv.org/abs/2402.13616)
 
