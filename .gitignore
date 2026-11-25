@@ -21,7 +21,5 @@ runs/train/yolov9-c-face-mask/*
 runs/train/yolov9-c-face-mask/weights/*
 !runs/train/yolov9-c-face-mask/weights/best.pt
 
-# Official YOLOv9 release weights are available from the upstream project
+# Official YOLOv9 release weights not selected for publication
 /yolov9-c.pt
-/yolov9-c-converted.pt
-/yolov9-c-face-mask-converted.pt

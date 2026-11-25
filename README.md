@@ -22,7 +22,7 @@ Use Python 3.9 and a compatible NVIDIA driver. Install the pinned dependencies w
 python -m pip install -r requirements.txt
 ```
 
-The face-mask dataset is in `data/face_mask_dataset/`. The trained `best.pt` checkpoint is stored with Git LFS; run `git lfs install` and `git lfs pull` after cloning if it was not downloaded automatically. Other generated run outputs and official upstream release weights are not included.
+The face-mask dataset is in `data/face_mask_dataset/`. The selected `best.pt`, `yolov9-c-converted.pt`, and `yolov9-c-face-mask-converted.pt` checkpoints are stored with Git LFS; run `git lfs install` and `git lfs pull` after cloning if they were not downloaded automatically. Other generated run outputs and nonselected upstream weights are not included.
 
 ## Upstream YOLOv9
 
